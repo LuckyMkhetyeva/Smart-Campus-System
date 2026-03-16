@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Campus System</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#2c3e50;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav{
+display:flex;
+justify-content:center;
+background:#34495e;
+}
+
+nav button{
+background:none;
+border:none;
+color:white;
+padding:15px 20px;
+cursor:pointer;
+font-size:16px;
+}
+
+nav button:hover{
+background:#2c3e50;
+}
+
+.container{
+padding:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+input,select{
+padding:10px;
+margin:5px;
+width:200px;
+}
+
+button.action{
+background:#3498db;
+color:white;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button.action:hover{
+background:#2980b9;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th, table td{
+border:1px solid #ddd;
+padding:10px;
+text-align:left;
+}
+
+table th{
+background:#3498db;
+color:white;
+}
+
+.section{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+.stats{
+display:flex;
+gap:20px;
+}
+
+.stat-box{
+background:#3498db;
+color:white;
+padding:20px;
+border-radius:8px;
+flex:1;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Smart Campus Attendance & Appointment System</h1>
+</header>
+
+<nav>
+<button onclick="showSection('attendance')">Attendance</button>
+<button onclick="showSection('appointments')">Appointments</button>
+<button onclick="showSection('dashboard')">Admin Dashboard</button>
+</nav>
+
+<div class="container">
+
+<!-- Attendance Section -->
+<div id="attendance" class="section active">
+
+<div class="card">
+<h2>Mark Student Attendance</h2>
+
+<input id="studentName" placeholder="Student Name">
+<select id="status">
+<option value="Present">Present</option>
+<option value="Absent">Absent</option>
+</select>
+
+<button class="action" onclick="markAttendance()">Mark Attendance</button>
+
+<table id="attendanceTable">
+<tr>
+<th>Student</th>
+<th>Status</th>
+<th>Date</th>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<!-- Appointment Section -->
+<div id="appointments" class="section">
+
+<div class="card">
+<h2>Book Appointment</h2>
+
+<input id="student" placeholder="Student Name">
+
+<select id="lecturer">
+<option>Dr Smith</option>
+<option>Dr Adams</option>
+<option>Prof Johnson</option>
+</select>
+
+<input type="date" id="date">
+<input type="time" id="time">
+
+<button class="action" onclick="bookAppointment()">Book Appointment</button>
+
+<table id="appointmentTable">
+<tr>
+<th>Student</th>
+<th>Lecturer</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" class="section">
+
+<div class="card">
+<h2>Admin Dashboard</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3 id="totalStudents">0</h3>
+<p>Attendance Records</p>
+</div>
+
+<div class="stat-box">
+<h3 id="totalAppointments">0</h3>
+<p>Appointments</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let attendanceCount = 0
+let appointmentCount = 0
+
+function showSection(section){
+
+document.querySelectorAll(".section").forEach(sec=>{
+sec.classList.remove("active")
+})
+
+document.getElementById(section).classList.add("active")
+
+}
+
+function markAttendance(){
+
+let student = document.getElementById("studentName").value
+let status = document.getElementById("status").value
+
+if(student===""){
+alert("Enter student name")
+return
+}
+
+let table = document.getElementById("attendanceTable")
+
+let row = table.insertRow()
+
+row.insertCell(0).innerText = student
+row.insertCell(1).innerText = status
+row.insertCell(2).innerText = new Date().toLocaleDateString()
+
+attendanceCount++
+
+document.getElementById("totalStudents").innerText = attendanceCount
+
+document.getElementById("studentName").value=""
+
+}
+
+function bookAppointment(){
+
+let student = document.getElementById("student").value
+let lecturer = document.getElementById("lecturer").value
+let date = document.getElementById("date").value
+let time = document.getElementById("time").value
+
+if(student==="" || date==="" || time===""){
+alert("Please fill all fields")
+return
+}
+
+let table = document.getElementById("appointmentTable")
+
+let row = table.insertRow()
+
+row.insertCell(0).innerText = student
+row.insertCell(1).innerText = lecturer
+row.insertCell(2).innerText = date
+row.insertCell(3).innerText = time
+
+appointmentCount++
+
+document.getElementById("totalAppointments").innerText = appointmentCount
+
+document.getElementById("student").value=""
+document.getElementById("date").value=""
+document.getElementById("time").value=""
+
+}
+
+</script>
+
+</body>
+</html>
