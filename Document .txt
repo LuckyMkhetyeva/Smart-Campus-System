@@ -1,0 +1,26 @@
+
+---
+
+## System Documentation
+
+- [System Specification](SPECIFICATION.md)
+- [System Architecture](ARCHITECTURE.md)
+
+---
+
+## How to Run the System
+
+1. Download the repository
+2. Open the project folder
+3. Open `index.html` in a web browser
+
+No installation is required.
+
+---
+
+## Future Improvements
+
+- Database integration
+- User authentication
+- Mobile application support
+- Notifications for appointment reminders
