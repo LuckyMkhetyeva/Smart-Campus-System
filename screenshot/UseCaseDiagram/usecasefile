@@ -1,0 +1,50 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    Student[Student]
+    Lecturer[Lecturer]
+    Admin[Admin]
+    ITSupport[ITSupport]
+    Advisor[Advisor]
+    System[System]
+    
+    BookAppointment[Book Appointment]
+    ViewSchedule[View Schedule]
+    Login[Login]
+    RecordAttendance[Record Attendance]
+    ApproveAppointment[Approve Appointment]
+    ViewAttendanceRecords[View Attendance Records]
+    ViewReports[View Reports]
+    ViewStatistics[View Statistics]
+    ManageUsers[Manage Users]
+    MaintainSystem[Maintain System]
+    ManageDatabase[Manage Database]
+    SendNotifications[Send Notifications]
+    GenerateReports[Generate Reports]
+
+    Student --> BookAppointment
+    Student --> ViewSchedule
+    Student --> Login
+
+    Lecturer --> RecordAttendance
+    Lecturer --> ApproveAppointment
+    Lecturer --> ViewAttendanceRecords
+    Lecturer --> Login
+
+    Admin --> ViewReports
+    Admin --> ViewStatistics
+    Admin --> ManageUsers
+    Admin --> Login
+
+    ITSupport --> MaintainSystem
+    ITSupport --> ManageDatabase
+    ITSupport --> Login
+
+    Advisor --> ViewReports
+    Advisor --> ViewStatistics
+    Advisor --> Login
+
+    System --> SendNotifications
+    System --> GenerateReports
