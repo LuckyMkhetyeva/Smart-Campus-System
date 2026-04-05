@@ -36,14 +36,12 @@ Remaining work is updated as tasks are completed.
 The chart visually shows whether the team is on track or falling behind schedule.
 
  This helps:
-
 Identify delays early
 Improve team productivity
 Ensure sprint goals are achieved within the time frame
 
 Sprint Contribution to MVP
 This sprint contributes directly to the development of a Minimum Viable Product (MVP) by implementing the system’s most essential features.
-
 At the end of the sprint, the system will allow:
 
 Students to log in and book appointments
@@ -56,4 +54,4 @@ Delivering these features early ensures:
 
 Quick validation of system usability
 Early feedback for improvement
-A strong foundation for future enhancements![alt text](image-1.png)
+A strong foundation for future enhancements!
