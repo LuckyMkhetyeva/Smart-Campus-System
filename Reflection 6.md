@@ -1,0 +1,9 @@
+Completing this Agile assignment was challenging because I had to take on multiple roles, including product owner and developer. One of the main difficulties was prioritizing user stories without real stakeholders. Since I was the only stakeholder, I experienced internal resistance when deciding which features were most important. I had to carefully balance what I personally wanted versus what the system actually needed to function as a Minimum Viable Product (MVP).
+
+Another challenge was estimating effort using story points. Without actual development experience for each feature, I had to rely on assumptions. Some features, such as attendance recording and system performance, were assigned higher story points due to their complexity. This process made me realize how important team collaboration is in Agile environments, as different perspectives improve estimation accuracy.
+
+Breaking down user stories into tasks also revealed hidden complexity. Features like booking appointments initially seemed simple, but when divided into frontend design, backend logic, and testing, they became more complex. This helped me understand the importance of decomposition in Agile.
+
+Maintaining traceability between Assignments 4, 5, and 6 was another challenge. I had to ensure that each user story aligned with both functional requirements and use cases. This required careful planning and consistency across all deliverables.
+
+Overall, this assignment helped me understand Agile principles such as prioritization, iterative development, and sprint planning. It also highlighted the importance of adaptability and structured thinking in software development.
