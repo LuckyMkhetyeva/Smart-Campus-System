@@ -1,0 +1,11 @@
+| Story ID | User Story               | Priority    | Story Points | Dependencies |
+| -------- | ------------------------ | ----------- | ------------ | ------------ |
+| US-001   | Login                    | Must-have   | 2            | None         |
+| US-002   | Book Appointment         | Must-have   | 3            | Login        |
+| US-003   | Approve Appointment      | Must-have   | 3            | Booking      |
+| US-004   | Record Attendance        | Must-have   | 5            | Login        |
+| US-009   | Performance Optimization | Must-have   | 5            | Architecture |
+| US-007   | Reports                  | Should-have | 3            | Data         |
+| US-005   | View Attendance          | Should-have | 2            | Attendance   |
+| US-006   | View Schedule            | Could-have  | 2            | Booking      |
+| US-008   | System Maintenance       | Could-have  | 3            | System       |

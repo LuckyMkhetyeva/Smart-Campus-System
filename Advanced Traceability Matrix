@@ -1,0 +1,10 @@
+| Requirement (A4)    | Use Case (A5)           | User Story (A6) |
+| ------------------- | ----------------------- | --------------- |
+| Login               | Login                   | US-001          |
+| Record Attendance   | Record Attendance       | US-004          |
+| Book Appointment    | Book Appointment        | US-002          |
+| Approve Appointment | Approve Appointment     | US-003          |
+| View Attendance     | View Attendance Records | US-005          |
+| View Schedule       | View Schedule           | US-006          |
+| Reports             | View Reports            | US-007          |
+| Maintenance         | Maintain System         | US-008          |
