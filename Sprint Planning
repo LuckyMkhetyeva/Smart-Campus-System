@@ -1,0 +1,59 @@
+Sprint Goal 
+
+The goal of this 2-week sprint is to deliver a functional Minimum Viable Product (MVP) by implementing core system features, including user authentication, appointment scheduling, appointment approval workflows, and attendance recording.
+
+This sprint focuses on enabling basic interaction between students and lecturers, ensuring the system provides immediate value and validates usability.
+
+ Selected User Stories (Sprint 1)
+
+The following high-priority (Must-have) user stories are selected for this sprint:
+
+US-001: Login
+US-002: Book Appointment
+US-003: Approve Appointment
+US-004: Record Attendance
+
+These stories were selected because they represent the core functionality required for the system to operate.
+
+ Sprint Backlog 
+| Task ID | Task Description                                             | Assigned To          | Estimated Hours | Status |
+| ------- | ------------------------------------------------------------ | -------------------- | --------------- | ------ |
+| T-001   | Design login user interface (wireframe using Figma)          | Frontend Developer   | 6               | To Do  |
+| T-002   | Implement authentication API (login logic & validation)      | Backend Developer    | 8               | To Do  |
+| T-003   | Develop appointment booking UI and input validation          | Frontend Developer   | 10              | To Do  |
+| T-004   | Implement appointment booking backend logic (database + API) | Backend Developer    | 10              | To Do  |
+| T-005   | Develop appointment approval workflow (approve/reject logic) | Backend Developer    | 8               | To Do  |
+| T-006   | Build attendance recording module (UI + backend integration) | Full Stack Developer | 10              | To Do  |
+| T-007   | Perform integration testing across all modules               | QA Tester            | 6               | To Do  |
+| T-008   | Fix bugs and refine system functionality                     | Development Team     | 6               | To Do  |
+
+
+ Sprint Burndown Concept
+A Sprint Burndown Chart will be used to track progress throughout the sprint.
+
+The total estimated work (in hours) is tracked daily.
+Remaining work is updated as tasks are completed.
+The chart visually shows whether the team is on track or falling behind schedule.
+
+ This helps:
+
+Identify delays early
+Improve team productivity
+Ensure sprint goals are achieved within the time frame
+
+Sprint Contribution to MVP
+This sprint contributes directly to the development of a Minimum Viable Product (MVP) by implementing the system’s most essential features.
+
+At the end of the sprint, the system will allow:
+
+Students to log in and book appointments
+Lecturers to approve or reject appointment requests
+Lecturers to record student attendance
+
+These functionalities represent the core value of the system, enabling real interaction between users and validating that the system meets its primary objectives.
+
+Delivering these features early ensures:
+
+Quick validation of system usability
+Early feedback for improvement
+A strong foundation for future enhancements
