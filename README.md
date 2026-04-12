@@ -37,3 +37,21 @@ This solution improves record management, reduces administrative workload, and e
 ---
 
 ## Project Structure
+
+## Assignment 7: Kanban Board
+
+This project uses an **Automated Kanban board** to manage development tasks for the Smart Campus System.
+
+### Customizations
+- Added **Testing** column for quality assurance
+- Added **Blocked** column for dependency tracking
+- Set WIP limit to 3 tasks in progress
+
+### Features
+- Task tracking using GitHub Issues
+- Agile workflow visualization
+- Task assignment using GitHub @mentions
+
+### Screenshot
+
+![Kanban Board](screenshots/kanban-board.png)
