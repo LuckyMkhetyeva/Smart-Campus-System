@@ -54,4 +54,4 @@ This project uses an **Automated Kanban board** to manage development tasks for 
 
 ### Screenshot
 
-![Kanban Board](screenshots/kanban-board.png)
+![Kanban Board](screensh![alt text](image-1.png)ots/kanban-board.png)

@@ -1,0 +1,11 @@
+# Reflection
+
+This assignment involved evaluating GitHub project templates and implementing a Kanban board for the Smart Campus System. One of the main challenges was selecting the most suitable template. Although several templates were available, it was important to choose one that aligned with Agile principles and supported the project workflow effectively.
+
+The Automated Kanban template was selected because it offers automation features that reduce manual effort and improve efficiency. However, customizing the board required careful planning. Adding columns such as "Testing" and "Blocked" was necessary to reflect real-world software development processes, especially quality assurance and dependency management.
+
+Another challenge was structuring tasks correctly. Initially, some tasks were combined, but they had to be separated into individual issues to align with Agile practices. This improved task clarity and made it easier to track progress.
+
+Comparing GitHub Projects to tools like Trello and Jira provided useful insights. GitHub Projects integrates directly with code repositories, making it convenient for developers, while Jira offers more advanced project management features. However, GitHub is simpler and more suitable for academic projects.
+
+Overall, this assignment improved my understanding of Agile methodologies, task management, and workflow visualization. It demonstrated how Kanban boards can enhance productivity, collaboration, and transparency in software development.
