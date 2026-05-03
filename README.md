@@ -153,3 +153,70 @@ Conclusion
 This assignment demonstrates how UML diagrams can be used to model system behavior and workflows. It provides a clear understanding of how different components of the Smart Campus System interact and operate.
 
 The diagrams improve system clarity, support better design decisions, and ensure alignment with requirements and user needs.
+
+
+
+
+
+
+
+
+
+
+
+Smart Campus Attendance and Appointment System
+
+Overview
+This project implements a Smart Campus System designed to manage student attendance and academic appointments efficiently. The system was developed using object-oriented principles and aligns with previously designed UML class diagrams, use cases, and system requirements.
+
+Language Choice
+Java was selected due to its strong support for object-oriented programming, clear class structure, and compatibility with UML-based design. It allows for clean implementation of relationships such as associations and encapsulation.
+
+Project Structure
+- /src → Core system classes (Student, Lecturer, Appointment, etc.)
+- /creational_patterns → All six creational design patterns
+- /tests → Unit tests for validating object creation and behavior
+- README.md → Project documentation
+- CHANGELOG.md → Development history
+
+System Design Alignment
+The implementation directly follows the class diagram created in earlier assignments. Each class includes:
+- Attributes (private fields)
+- Methods (based on system functionality)
+- Relationships (e.g., Student books Appointment, Lecturer approves Appointment)
+
+Creational Design Patterns Implemented
+
+1. Simple Factory
+Used to centralize user creation (Student, Lecturer).
+This reduces duplication and improves maintainability.
+
+2. Factory Method
+Used to delegate appointment creation to subclasses.
+This improves flexibility and scalability.
+
+3. Abstract Factory
+Used to create related objects (Student and Lecturer) as part of a family.
+Ensures consistency across object creation.
+
+4. Builder Pattern
+Used for constructing Appointment objects with optional attributes.
+Improves readability and prevents constructor overloading.
+
+5. Prototype Pattern
+Used to clone existing objects instead of creating new ones.
+Improves performance when object creation is costly.
+
+6. Singleton Pattern
+Used for DatabaseConnection to ensure only one instance exists.
+Thread-safe implementation ensures reliability in concurrent environments.
+
+Testing Strategy
+Unit tests were implemented to verify:
+- Correct object creation
+- Attribute initialization
+- Edge cases (e.g., missing ID in Builder)
+- Singleton uniqueness
+
+Conclusion
+This project demonstrates the practical application of UML design into working code, while effectively using creational design patterns to improve flexibility, scalability, and maintainability.
