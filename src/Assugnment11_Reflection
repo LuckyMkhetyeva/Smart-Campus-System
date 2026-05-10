@@ -1,0 +1,17 @@
+Reflection – Assignment 11
+
+This assignment focused on implementing a persistence repository layer for the Smart Campus Attendance and Appointment System. The objective was to separate storage logic from business logic while supporting CRUD operations and future scalability.
+
+One of the major challenges encountered was designing a generic repository interface that could work across multiple domain entities. Initially, it was difficult to determine how to make the interface reusable while still supporting entity-specific repositories. The use of Java generics solved this problem effectively because it allowed a single interface structure to be reused for Students, Appointments, and Attendance records.
+
+Another challenge involved implementing the in-memory repositories using HashMaps. Although HashMaps simplified data storage, careful consideration was required to ensure CRUD operations worked correctly. For example, ensuring that delete operations removed objects correctly and that findById returned Optional objects required attention to detail.
+
+The Factory Pattern was selected as the abstraction mechanism because it simplified repository creation and supported scalability. Instead of tightly coupling services to a specific storage implementation, the RepositoryFactory allows repositories to be swapped easily. This design decision supports future integration with databases such as MySQL or MongoDB.
+
+A key lesson learned during this assignment was the importance of separation of concerns. By isolating persistence logic inside repositories, the system becomes easier to maintain and test. Unit testing also became much simpler because in-memory repositories avoid dependency on external databases.
+
+This assignment aligned closely with previous assignments, especially the UML class diagrams and domain models. The repository interfaces directly correspond to the entities defined earlier, ensuring traceability between analysis, design, and implementation.
+
+Another important insight was understanding future-proofing in software engineering. Although the system currently uses in-memory storage, the architecture now supports future expansion without major redesign. The stub DatabaseStudentRepository demonstrated how additional storage implementations can be integrated later.
+
+Overall, this assignment strengthened my understanding of repository patterns, abstraction, generics, and scalable software design principles. It also reinforced the importance of designing systems that are flexible, maintainable, and easy to test.
