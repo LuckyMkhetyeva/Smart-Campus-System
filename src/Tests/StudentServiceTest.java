@@ -1,13 +1,32 @@
-@Test
-public void testAddStudent() {
-    StudentService service =
-        new StudentService(
-            new InMemoryStudentRepository());
+package com.smartcampus.services;
 
-    Student student =
-        new Student("S1","Lucky","mail@test.com");
+import com.smartcampus.model.Student;
+import com.smartcampus.repositories.inmemory
+        .InMemoryStudentRepository;
 
-    service.addStudent(student);
+import org.junit.jupiter.api.Test;
 
-    assertEquals("S1", student.getStudentId());
+import static org.junit.jupiter.api.Assertions.*;
+
+public class StudentServiceTest {
+
+    @Test
+    public void testAddStudent() {
+
+        StudentService service =
+                new StudentService(
+                        new InMemoryStudentRepository());
+
+        Student student =
+                new Student(
+                        "S1",
+                        "Lucky",
+                        "mail@test.com");
+
+        service.addStudent(student);
+
+        assertEquals(
+                "S1",
+                student.getStudentId());
+    }
 }

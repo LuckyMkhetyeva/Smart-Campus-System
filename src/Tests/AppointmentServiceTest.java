@@ -1,19 +1,37 @@
-@Test
-public void testApproveAppointment() {
+package com.smartcampus.services;
 
-    InMemoryAppointmentRepository repository =
-        new InMemoryAppointmentRepository();
+import com.smartcampus.model.Appointment;
+import com.smartcampus.repositories.inmemory
+        .InMemoryAppointmentRepository;
 
-    Appointment appointment =
-        new Appointment("A1","2026-06-01","Pending");
+import org.junit.jupiter.api.Test;
 
-    repository.save(appointment);
+import static org.junit.jupiter.api.Assertions.*;
 
-    AppointmentService service =
-        new AppointmentService(repository);
+public class AppointmentServiceTest {
 
-    Appointment updated =
-        service.approveAppointment("A1");
+    @Test
+    public void testApproveAppointment() {
 
-    assertEquals("Approved", updated.getStatus());
+        InMemoryAppointmentRepository repository =
+                new InMemoryAppointmentRepository();
+
+        Appointment appointment =
+                new Appointment(
+                        "A1",
+                        "2026-06-01",
+                        "Pending");
+
+        repository.save(appointment);
+
+        AppointmentService service =
+                new AppointmentService(repository);
+
+        Appointment updated =
+                service.approveAppointment("A1");
+
+        assertEquals(
+                "Approved",
+                updated.getStatus());
+    }
 }
